@@ -92,3 +92,30 @@ img {
   background-position: center center;
   height: 55rem;
 }
+
+.categorias {
+  padding-top: 5rem;
+}
+
+.categoria a {
+  text-align: center;
+  display: block;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.categoria a:hover {
+  background-color: #037bc0;
+  color: #FFFFFF;
+  border-bottom-right-radius: 1rem;
+}
+
+.listado-categorias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.sobre-nosotros {
+  background-image: linear-gradient(to right, transparent 50%, #037bc0 50%, #037bc0 100%), url(../images/nosotros.jpg);
+}
