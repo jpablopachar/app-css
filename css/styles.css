@@ -3,10 +3,19 @@ html {
   font-size: 62.5%;
 }
 
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   font-family: 1.6rem;
   line-height: 2;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3 {
@@ -28,7 +37,7 @@ h3 {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #000000;
 }
 
 .contenedor {
@@ -44,13 +53,14 @@ img {
 .btn {
   background-color: #8cbc00;
   display: block;
-  color: #FFF;
+  color: #FFFFFF;
   text-transform: uppercase;
   font-weight: 900;
   padding: 1rem;
   transition: background-color .3s ease-out;
   text-align: center;
   border: none;
+  width: 100%;
 }
 
 .btn:hover {
@@ -72,7 +82,7 @@ img {
 }
 
 .nombre-sitio span {
-  color: #037bc0;
+  color: #037BC0;
 }
 
 .contenedor-navegacion {
@@ -82,7 +92,8 @@ img {
 .nav-principal {
   padding: 2rem 0;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero {
@@ -94,7 +105,11 @@ img {
 }
 
 .categorias {
-  padding-top: 5rem;
+  padding: 5rem 0;
+}
+
+.categoria {
+  margin-bottom: 2rem;
 }
 
 .categoria a {
@@ -105,7 +120,7 @@ img {
 }
 
 .categoria a:hover {
-  background-color: #037bc0;
+  background-color: #037BC0;
   color: #FFFFFF;
   border-bottom-right-radius: 1rem;
 }
@@ -190,7 +205,12 @@ img {
 }
 
 .producto {
-  background-color: #037bc0;
+  background-color: #037BC0;
+  margin-bottom: 2rem;
+}
+
+.producto:last-of-type {
+  margin-bottom: 0;
 }
 
 .texto-producto {
