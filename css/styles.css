@@ -236,10 +236,19 @@ img {
     font-weight: 700;
 }
 
-/* .contenido-nosotros {
+.contenido-nosotros {
     display: grid;
-    background-color: aqua;
-} */
+    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    column-gap: 4rem;
+}
+
+.informacion-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
+}
 
 @media (min-width: 768px) {
     h1 {
@@ -378,5 +387,9 @@ img {
 
     .footer-menu a {
         text-align: left;
+    }
+
+    .informacion-nosotros {
+        padding: 0;
     }
 }
